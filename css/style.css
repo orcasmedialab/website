@@ -16,28 +16,60 @@ body {
     padding: 0 20px;
 }
 
+/* Header styling */
 header {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
 }
 
-header h1 {
-    font-size: 2em;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute elements evenly */
+}
+
+.logo {
+    display: flex;
+    flex-direction: column; /* Stack logo and company name */
+    align-items: center; /* Center elements horizontally */
+}
+
+.logo img {
+    width: 50px; /* Adjust as needed */
+    margin-bottom: 5px; /* Add spacing between logo and company name */
+}
+
+.logo h1 {
+    font-size: 1.5em; /* Adjust as needed */
+    margin: 0; /* Remove default margin */
+}
+
+.tagline {
+    font-size: 1em; /* Adjust as needed */
+    text-align: center; /* Center tagline */
 }
 
 nav ul {
     list-style: none;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
     margin-right: 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 1.2em; /* Adjust as needed */
+}
+
+nav {
+    margin-left: auto; /* Push navigation to the right */
 }
 
 section {
