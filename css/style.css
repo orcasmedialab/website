@@ -75,17 +75,21 @@ section {
     padding: 50px 0;
 }
 
-.portfolio-item {
+.portfolio-container {
     display: flex;
-    flex-direction: row; /* Change flex-direction to row */
-    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+}
+
+.portfolio-item {
+    flex: 0 0 calc(50% - 20px); /* Each item takes up half of the container width with 20px spacing */
+    margin-bottom: 20px; /* Add spacing between rows */
     text-align: center;
 }
 
 .portfolio-item img {
-    max-width: 400px; /* Set maximum width to 400px */
+    max-width: 100%; /* Ensure images don't exceed container width */
     height: auto; /* Maintain aspect ratio */
-    margin-right: 20px; /* Add spacing between images */
 }
 
 .portfolio-item p {
