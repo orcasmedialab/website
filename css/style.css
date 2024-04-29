@@ -77,14 +77,15 @@ section {
 
 .portfolio-item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Change flex-direction to row */
     align-items: center;
     text-align: center;
 }
 
 .portfolio-item img {
-    max-width: 200px; /* Set maximum width to 400px */
+    max-width: 400px; /* Set maximum width to 400px */
     height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add spacing between images */
 }
 
 .portfolio-item p {
