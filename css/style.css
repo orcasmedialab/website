@@ -28,8 +28,8 @@ header {
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
-    align-items: center;
-    justify-content: space-between; /* Distribute elements evenly */
+    flex-direction: column; /* Adjust to a column layout */
+    align-items: center; /* Center elements horizontally */
 }
 
 .logo {
@@ -48,14 +48,13 @@ header {
 }
 
 .tagline {
-    font-size: 1em; /* Adjust as needed */
-    margin: 5px 0; /* Add spacing between company name and tagline */
+    margin-top: 5px; /* Add space between company name and tagline */
+    text-align: center; /* Center the tagline */
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    margin: 0; /* Remove default margin */
 }
 
 nav ul li {
@@ -69,7 +68,7 @@ nav ul li a {
 }
 
 nav {
-    margin-left: auto; /* Push navigation to the right */
+    margin-top: 20px; /* Add space between tagline and navigation */
 }
 
 section {
