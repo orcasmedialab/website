@@ -34,13 +34,12 @@ header {
 
 .logo {
     display: flex;
-    flex-direction: column; /* Stack logo and company name */
-    align-items: center; /* Center elements horizontally */
+    align-items: center;
 }
 
 .logo img {
     width: 50px; /* Adjust as needed */
-    margin-bottom: 5px; /* Add spacing between logo and company name */
+    margin-right: 10px; /* Add spacing between logo and company name */
 }
 
 .logo h1 {
@@ -50,12 +49,13 @@ header {
 
 .tagline {
     font-size: 1em; /* Adjust as needed */
-    text-align: center; /* Center tagline */
+    margin: 5px 0; /* Add spacing between company name and tagline */
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    margin: 0; /* Remove default margin */
 }
 
 nav ul li {
