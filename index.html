@@ -4,52 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orcas Media Lab - Exploring boundaries in media production, AI research, and embedded technology">
     <title>Orcas Media Lab</title>
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Orcas Media Lab">
+    <meta property="og:description" content="Exploring boundaries in media production, AI research, and embedded technology">
+    <meta property="og:image" content="/media/omlLogo-small.png">
+    <meta property="og:url" content="https://orcasmedialab.com">
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/media/omlLogo-small.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-        }
-    </style>
+    
+    <!-- Security -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' https://cdnjs.cloudflare.com; connect-src 'self';">
+    
+    <!-- DOMPurify for XSS protection -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.3/purify.min.js"></script>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <img src="media/omlLogo-small.png" alt="Orcas Media Lab Logo">
+            <div class="logo" role="banner">
+                <img src="media/omlLogo-small.png" alt="Orcas Media Lab Logo" width="50" height="50">
                 <h1>Orcas Media Lab</h1>
             </div>
             <p class="tagline">Exploring Boundaries</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <nav aria-label="Main navigation">
+                <ul role="menubar">
+                    <li role="none"><a role="menuitem" href="index.html" aria-current="page">About</a></li>
+                    <li role="none"><a role="menuitem" href="products.html">Products</a></li>
+                    <li role="none"><a role="menuitem" href="media.html">Media</a></li>
+                    <li role="none"><a role="menuitem" href="projects.html">Projects</a></li>
                 </ul>
             </nav>
         </div>
     </header>    
 
-    <section id="about">
-        <div class="container" id="about-content">
-            <!-- Content will be inserted here -->
-        </div>
-    </section>
+    <main>
+        <div class="container">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2 id="about-title">About Us</h2>
+                    <p>Welcome to Orcas, where creativity meets technology. We're a team of passionate individuals driven by the desire to explore the endless possibilities of production. From captivating videos to engaging social content, we strive to deliver innovative and compelling experiences to our audience.</p>
+                    <p>At Orcas, we pride ourselves on our commitment to excellence and our dedication to pushing the boundaries of what's possible. With a focus on quality and innovation, we're constantly evolving to stay ahead of the curve in the ever-changing landscape of technology.</p>
+                    <p>Our mission is simple: to inspire, entertain, and educate through the power of media. Whether it's through our cinematic-quality videos, our thought-provoking AI research, or our cutting-edge embedded technology projects, we're always looking for new ways to captivate and engage our audience.</p>
+                    <p>Join us on our journey as we continue to explore new horizons and redefine the future. Welcome to Orcas – where imagination knows no bounds.</p>
+                </div>
 
-    <section id="portfolio">
-        <div class="container" id="portfolio-content">
-            <!-- Content from portfolio.html will be loaded here -->
+                <div class="contact-section">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>Email: jason@orcasmedialab.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Location: Pacific Northwest</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-
-    <section id="contact">
-        <div class="container" id="contact-content">
-            <!-- Content from contact.html will be loaded here -->
-        </div>
-    </section>
+    </main>
 
     <footer>
         <div class="container">
@@ -58,28 +84,6 @@
     </footer>
 
     <script src="js/script.js"></script>
-
-    <script>
-        fetch('sections/about.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('about-content').innerHTML = data;
-            })
-            .catch(error => console.error('Error fetching about content:', error));
-        fetch('sections/portfolio.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('portfolio-content').innerHTML = data;
-            })
-            .catch(error => console.error('Error fetching portfolio content:', error));
-        fetch('sections/contact.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('contact-content').innerHTML = data;
-            })
-            .catch(error => console.error('Error fetching contact content:', error));
-    </script>
-    
 </body>
 
 </html>

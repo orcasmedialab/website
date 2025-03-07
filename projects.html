@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orcas Media Lab - Innovation Projects">
+    <title>Projects - Orcas Media Lab</title>
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Projects - Orcas Media Lab">
+    <meta property="og:description" content="Innovation projects from Orcas Media Lab">
+    <meta property="og:image" content="/media/omlLogo-small.png">
+    <meta property="og:url" content="https://orcasmedialab.com/projects">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/media/omlLogo-small.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo" role="banner">
+                <img src="media/omlLogo-small.png" alt="Orcas Media Lab Logo" width="50" height="50">
+                <h1>Orcas Media Lab</h1>
+            </div>
+            <p class="tagline">Exploring Boundaries</p>
+            <nav aria-label="Main navigation">
+                <ul role="menubar">
+                    <li role="none"><a role="menuitem" href="index.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="products.html">Products</a></li>
+                    <li role="none"><a role="menuitem" href="media.html">Media</a></li>
+                    <li role="none"><a role="menuitem" href="projects.html" aria-current="page">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>    
+
+    <main>
+        <div class="container">
+            <h2 id="projects-title">Innovation Lab</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>WaveForm</h3>
+                        <p>Interactive sound visualization experiment</p>
+                        <div class="project-visual">
+                            <canvas id="waveformCanvas" class="interactive-demo"></canvas>
+                        </div>
+                        <div class="tech-stack">
+                            <span>WebGL</span>
+                            <span>Web Audio API</span>
+                            <span>Three.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card neural-net">
+                    <div class="project-content">
+                        <h3>Neural Playground</h3>
+                        <p>Live neural network visualization</p>
+                        <div class="project-visual">
+                            <div id="neuralNetDemo" class="interactive-demo"></div>
+                        </div>
+                        <div class="tech-stack">
+                            <span>TensorFlow.js</span>
+                            <span>D3.js</span>
+                            <span>WebGL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Pulse</h3>
+                        <p>Real-time music visualization engine</p>
+                        <div class="project-visual">
+                            <div id="pulseDemo" class="interactive-demo"></div>
+                        </div>
+                        <div class="tech-stack">
+                            <span>Web Audio API</span>
+                            <span>Canvas</span>
+                            <span>WebGL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Orcas Media Lab. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add necessary scripts for interactive demos -->
+    <script src="js/script.js"></script>
+</body>
+</html> 
