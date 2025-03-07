@@ -27,9 +27,11 @@
         <div class="container">
             <div class="logo" role="banner">
                 <img src="media/omlLogo-small.png" alt="Orcas Media Lab Logo" width="50" height="50">
-                <h1>Orcas Media Lab</h1>
+                <div class="logo-text">
+                    <h1>Orcas Media Lab</h1>
+                    <p class="tagline">Exploring Boundaries</p>
+                </div>
             </div>
-            <p class="tagline">Exploring Boundaries</p>
             <nav aria-label="Main navigation">
                 <ul role="menubar">
                     <li role="none"><a role="menuitem" href="index.html">About</a></li>
@@ -42,66 +44,54 @@
     </header>    
 
     <main>
-        <div class="container">
-            <!-- Portfolio Gallery -->
-            <div class="portfolio-section">
-                <h2>Photography</h2>
-                <div class="portfolio-container">
-                    <div class="portfolio-item">
-                        <img src="media/diamondRing.jpg" 
-                             alt="Diamond Ring Eclipse Photography" 
-                             loading="lazy"
-                             width="600"
-                             height="400">
-                        <p>Diamond Ring Eclipse Photography</p>
-                    </div>
+        <div class="hero-section media-hero">
+            <div class="hero-content">
+                <h2 class="gradient-text">Visual Stories</h2>
+                <p class="hero-subtitle">Crafting moments that move</p>
+            </div>
+        </div>
 
-                    <div class="portfolio-item">
-                        <img src="media/baileysBeads.jpg" 
-                             alt="Bailey's Beads Eclipse Photography" 
-                             loading="lazy"
-                             width="600"
-                             height="400">
-                        <p>Bailey's Beads Eclipse Photography</p>
+        <div class="container">
+            <!-- Featured Production -->
+            <section class="featured-production">
+                <div class="featured-video">
+                    <div class="video-wrapper">
+                        <video poster="media/eclipse-documentary-poster.jpg" controls>
+                            <source src="media/eclipse-teaser.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="featured-info">
+                        <span class="release-badge">Coming May 2024</span>
+                        <h3>Eclipse: A Journey Through Shadow</h3>
+                        <p>Experience the dramatic story of the 2024 total solar eclipse through our lens. A visual journey that captures the intersection of celestial mechanics and human wonder.</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- Latest Productions -->
-            <section class="latest-productions">
-                <h3 class="section-title">Latest Productions</h3>
-                <div class="production-grid">
-                    <article class="production-card">
-                        <div class="production-image">
-                            <img src="media/tech-horizons-poster.jpg" 
-                                 alt="Tech Horizons Series" 
-                                 loading="lazy">
-                            <div class="play-overlay">
-                                <span class="play-badge">Coming Soon</span>
-                            </div>
-                        </div>
-                        <div class="production-info">
-                            <h4>Tech Horizons</h4>
-                            <p>Exploring breakthrough technologies shaping our future</p>
-                            <span class="release-date">May 2, 2024</span>
-                        </div>
-                    </article>
+            <!-- Photography Portfolio -->
+            <section class="photography-portfolio">
+                <h3 class="section-title">Photography</h3>
+                <div class="portfolio-grid">
+                    <figure class="portfolio-item">
+                        <img src="media/diamondRing.jpg" 
+                             alt="Diamond Ring Eclipse Photography" 
+                             loading="lazy">
+                        <figcaption>
+                            <h4>Diamond Ring Effect</h4>
+                            <p>Total Solar Eclipse, 2024</p>
+                        </figcaption>
+                    </figure>
 
-                    <article class="production-card">
-                        <div class="production-image">
-                            <img src="media/digital-pulse-poster.jpg" 
-                                 alt="Digital Pulse Documentary" 
-                                 loading="lazy">
-                            <div class="play-overlay">
-                                <span class="play-badge">Coming Soon</span>
-                            </div>
-                        </div>
-                        <div class="production-info">
-                            <h4>Digital Pulse</h4>
-                            <p>A visual journey through electronic music production</p>
-                            <span class="release-date">May 3, 2024</span>
-                        </div>
-                    </article>
+                    <figure class="portfolio-item">
+                        <img src="media/baileysBeads.jpg" 
+                             alt="Bailey's Beads Eclipse Photography" 
+                             loading="lazy">
+                        <figcaption>
+                            <h4>Bailey's Beads</h4>
+                            <p>Total Solar Eclipse, 2024</p>
+                        </figcaption>
+                    </figure>
                 </div>
             </section>
         </div>
