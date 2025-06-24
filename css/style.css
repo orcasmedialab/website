@@ -9,10 +9,13 @@
 
 /* Variables */
 :root {
-    --primary-color: #333;
-    --text-color: #fff;
-    --accent-color: #9D72FF; /* New modern purple */
-    --accent-gradient: linear-gradient(135deg, #9D72FF 0%, #7D54FF 100%);
+    --primary-color: #020100;
+    --text-color: #020100;
+    --background-color: #FEFCFD;
+    --accent-color: #F75C03;
+    --secondary-color: #5D5D81;
+    --soft-accent: #BFCDE0;
+    --accent-gradient: linear-gradient(135deg, #F75C03 0%, #5D5D81 100%);
     --max-width: 1200px;
     --spacing-sm: 10px;
     --spacing-md: 20px;
@@ -24,6 +27,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     color: var(--primary-color);
+    background: var(--background-color);
 }
 
 .container {
@@ -37,7 +41,8 @@ body {
 
 /* Header */
 header {
-    background: rgba(26, 26, 26, 0.98);
+    background: var(--primary-color);
+    color: #FEFCFD;
     padding: 20px 0;
 }
 
@@ -69,14 +74,14 @@ header .container {
 }
 
 .logo-text h1 {
-    color: #ffffff !important; /* Ensure the title is white */
+    color: #FEFCFD !important;
     font-size: 1.5rem;
     font-weight: 600;
     margin: 0;
 }
 
 .logo-text .tagline {
-    color: #ffffff !important; /* Ensure the tagline is white */
+    color: #FEFCFD !important;
     font-size: 0.9rem;
     margin-top: 4px;
 }
@@ -95,7 +100,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #ffffff !important; /* Ensure navigation links are white */
+    color: #FEFCFD !important;
     text-decoration: none;
     font-weight: 500;
     transition: opacity 0.3s ease;
@@ -106,7 +111,7 @@ nav ul li a:hover {
 }
 
 nav ul li a[aria-current="page"] {
-    color: var(--accent-color); /* Highlight current page */
+    color: var(--accent-color) !important;
 }
 
 /* Sections */
@@ -123,18 +128,37 @@ section {
 }
 
 .portfolio-item {
-    text-align: center;
+    position: relative;
+    margin: 0;
+    text-align: left;
+    background: #fff;
 }
 
 .portfolio-item img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    display: block;
+    border-radius: 15px;
     transition: transform 0.3s ease;
 }
 
-.portfolio-item img:hover {
-    transform: scale(1.05);
+.portfolio-item figcaption {
+    display: block !important;
+    color: #232946 !important;
+    background: #fff !important;
+    border: none !important;
+    padding: 12px 0 0 0 !important;
+    margin-top: 8px !important;
+    font-size: 1rem !important;
+    position: static !important;
+    z-index: auto !important;
+    opacity: 1 !important;
+    box-shadow: none !important;
+    text-align: left !important;
+}
+
+.portfolio-item:hover figcaption {
+    transform: none !important;
 }
 
 /* Loading and Error States */
@@ -151,7 +175,7 @@ section {
 /* Footer */
 footer {
     background-color: var(--primary-color);
-    color: var(--text-color);
+    color: #FEFCFD;
     padding: 40px 0;
     text-align: center;
     margin-top: auto;
@@ -195,7 +219,7 @@ footer {
 }
 
 .contact-section {
-    background: linear-gradient(145deg, #ffffff, #f5f5f5);
+    background: linear-gradient(145deg, #FEFCFD, #BFCDE0);
     border-radius: 20px;
     padding: var(--spacing-lg);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -239,46 +263,27 @@ footer {
 }
 
 /* Unified Hero Banner Styles */
-.hero-section {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
-    height: 30vh;
+.hero-section,
+.media-hero,
+.products-hero,
+.projects-hero {
+    background: #232946;
+    color: #FEFCFD;
+    height: 18vh;
+    min-height: 120px;
+    max-height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    margin-bottom: 100px; /* Add space below hero */
+    margin-bottom: 60px;
 }
 
-/* Add gradient overlay */
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at center, rgba(157, 114, 255, 0.2) 0%, rgba(0,0,0,0.4) 100%);
-    pointer-events: none;
-}
-
-/* Add subtle animated gradient */
+/* Remove overlays */
+.hero-section::before,
 .hero-section::after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    right: -50%;
-    bottom: -50%;
-    background: linear-gradient(
-        45deg,
-        rgba(157, 114, 255, 0.1) 0%,
-        rgba(157, 114, 255, 0) 20%,
-        rgba(157, 114, 255, 0) 80%,
-        rgba(157, 114, 255, 0.1) 100%
-    );
-    transform: rotate(45deg);
-    pointer-events: none;
+    display: none !important;
 }
 
 .hero-content {
@@ -288,22 +293,24 @@ footer {
 }
 
 .hero-content h2.gradient-text {
-    font-size: 3em;
-    color: #ffffff;
-    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 20px;
+    font-size: 2.1em;
+    color: #FEFCFD;
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+    text-fill-color: unset;
+    margin-bottom: 10px;
     font-weight: 700;
 }
 
 .hero-content .hero-subtitle {
-    font-size: 1.2em;
-    color: #ffffff;
+    font-size: 1em;
+    color: #FEFCFD;
     opacity: 1;
     font-weight: 500;
     text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 0;
 }
 
 /* Products Page Specific Styles */
@@ -352,11 +359,17 @@ footer {
 
 .product-label {
     display: inline-block;
-    padding: 8px 16px;
-    background: rgba(157, 114, 255, 0.1);
-    color: #9D72FF;
-    border-radius: 20px;
-    margin-bottom: 20px;
+    padding: 2px 12px;
+    background: transparent;
+    color: var(--accent-color);
+    border: 1.5px solid var(--accent-color);
+    border-radius: 8px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 18px;
+    transition: background 0.2s, color 0.2s, border 0.2s;
 }
 
 .feature-list {
@@ -375,7 +388,7 @@ footer {
     content: '→';
     position: absolute;
     left: 0;
-    color: #9D72FF;
+    color: var(--accent-color);
 }
 
 .future-products {
@@ -388,6 +401,17 @@ footer {
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 60px;
+    color: var(--accent-color);
+    position: relative;
+}
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--accent-color);
+    margin: 16px auto 0 auto;
+    border-radius: 2px;
 }
 
 .product-cards {
@@ -447,45 +471,20 @@ footer {
 
 /* Updated button styles */
 .cta-button {
-    background: var(--accent-gradient);
-    color: var(--text-color);
+    background: var(--accent-color);
+    color: #FEFCFD;
     border: none;
-    padding: 16px 32px;
-    border-radius: 30px;
+    padding: 12px 32px;
+    border-radius: 6px;
     font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 0.5px;
+    font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 6px 15px rgba(157, 114, 255, 0.2);
+    transition: background 0.2s;
 }
 
 .cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(157, 114, 255, 0.3);
-}
-
-.cta-button:active {
-    transform: translateY(0);
-}
-
-/* Add subtle animation to button */
-.cta-button::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 50%);
-    transform: translateX(-100%) rotate(35deg);
-    transition: transform 0.6s ease;
-}
-
-.cta-button:hover::after {
-    transform: translateX(100%) rotate(35deg);
+    background: var(--secondary-color);
+    color: #FEFCFD;
 }
 
 /* Media Page Specific Styles */
@@ -627,8 +626,6 @@ footer {
 
 .portfolio-item {
     position: relative;
-    border-radius: 15px;
-    overflow: hidden;
     margin: 0;
 }
 
@@ -644,18 +641,23 @@ footer {
 
 .portfolio-item figcaption {
     position: absolute;
-    bottom: 0;
     left: 0;
     right: 0;
-    padding: 30px;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-    color: var(--text-color);
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
+    bottom: 0;
+    padding: 18px 24px 14px 24px;
+    background: linear-gradient(to top, rgba(20,22,34,0.92) 80%, rgba(20,22,34,0.2) 100%);
+    color: #FEFCFD;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 1rem;
+    transform: none;
+    transition: none;
+    z-index: 2;
+    opacity: 1;
 }
 
 .portfolio-item:hover figcaption {
-    transform: translateY(0);
+    transform: none;
 }
 
 /* Responsive Adjustments */
@@ -818,5 +820,20 @@ footer {
 @media (max-width: 1200px) {
     .projects-container {
         padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 13vh;
+        min-height: 70px;
+        max-height: 140px;
+        margin-bottom: 30px;
+    }
+    .hero-content h2.gradient-text {
+        font-size: 1.2em;
+    }
+    .hero-content .hero-subtitle {
+        font-size: 0.95em;
     }
 }
