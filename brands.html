@@ -80,7 +80,7 @@
 
     <main id="main">
 
-        <!-- ============ Page hero ============ -->
+        <!-- ============ Page hero + brands ============ -->
         <section class="page-hero ink" aria-labelledby="page-title">
             <div class="container">
                 <div class="split-head" data-reveal>
@@ -88,142 +88,71 @@
                         <p class="eyebrow">Our brands</p>
                         <h1 id="page-title" class="display-lg">Two brands, <em>one standard.</em></h1>
                     </div>
-                    <p class="lead">Each brand has its own name and voice. Orcas Media Lab is the workshop behind them: product design, brand, photography, and a lot of testing in the rain.</p>
+                    <p class="lead">The ideas that made it out of the lab and into people's hands. Each brand has its own name and voice; we handle the design, testing, and photography behind them.</p>
                 </div>
 
-                <ul class="index-list" data-reveal>
-                    <li>
-                        <a href="#rainierrack">
-                            <span class="mono">01</span>
-                            <span class="index-name">RainierRack</span>
-                            <span class="index-meta">Magnetic ski &amp; snowboard rack</span>
-                            <span class="row-status">Live</span>
-                            <span class="index-arrow" aria-hidden="true">↓</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#bussy-botanicals">
-                            <span class="mono">02</span>
-                            <span class="index-name">Bussy Botanicals</span>
-                            <span class="index-meta">Premium unscented rear wash</span>
-                            <span class="row-status">On Amazon</span>
-                            <span class="index-arrow" aria-hidden="true">↓</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- ============ RainierRack ============ -->
-        <section class="section cream" id="rainierrack" aria-labelledby="rr-title">
-            <div class="container">
-                <div class="split-head" data-reveal>
-                    <div>
-                        <p class="eyebrow">01 <span class="rule"></span> RainierRack</p>
-                        <h2 id="rr-title" class="display">Engineered for the <em>parking lot.</em></h2>
-                    </div>
-                    <p class="lead">A sleek, portable magnetic rack that holds your skis or snowboard against your car. Every mountain day starts at the car, so RainierRack turns your door into a gear station: skis upright, boots on, and nothing sliding into your paint.</p>
-                </div>
-
-                <div class="rr-grid" data-reveal>
-                    <figure class="rr-visual">
-                        <figcaption class="rr-visual-head">
-                            <span class="mono eyebrow-sm">RainierRack Mini</span>
-                            <span class="mono eyebrow-sm" data-rr-count>01 / 05</span>
-                        </figcaption>
-                        <img src="assets/img/rainierrack-render.png" alt="Render of the RainierRack Mini, a black magnetic rack with ski and board slots" width="765" height="562" loading="lazy">
-                        <p class="rr-visual-foot mono eyebrow-sm">Protect your car. Save your skis.</p>
-                    </figure>
-
-                    <div class="rr-panel">
-                        <div class="rr-tabs" role="tablist" aria-label="RainierRack features">
-                            <button class="rr-tab" role="tab" id="rr-tab-0" aria-controls="rr-detail" aria-selected="true" data-title="Magnetic base" data-body="Grips the door panel so the rack stays put while you gear up, then lifts right off when it's time to roll."><span class="mono">01</span>Magnetic base</button>
-                            <button class="rr-tab" role="tab" id="rr-tab-1" aria-controls="rr-detail" aria-selected="false" tabindex="-1" data-title="Ski slot" data-body="Holds a pair of skis upright and together, so they aren't sliding down the fender while you buckle your boots."><span class="mono">02</span>Ski slot</button>
-                            <button class="rr-tab" role="tab" id="rr-tab-2" aria-controls="rr-detail" aria-selected="false" tabindex="-1" data-title="Board slot" data-body="A dedicated channel for your snowboard, so it stands tall instead of lying in the slush."><span class="mono">03</span>Board slot</button>
-                            <button class="rr-tab" role="tab" id="rr-tab-3" aria-controls="rr-detail" aria-selected="false" tabindex="-1" data-title="Pole holders" data-body="Keeps your poles in reach and off the ground, right where you left them."><span class="mono">04</span>Pole holders</button>
-                            <button class="rr-tab" role="tab" id="rr-tab-4" aria-controls="rr-detail" aria-selected="false" tabindex="-1" data-title="Car-safe material" data-body="Built to protect your paint. Fresh lines belong on the mountain, not on your door."><span class="mono">05</span>Car-safe material</button>
+                <div class="acc" data-reveal>
+                    <details class="acc-item" id="rainierrack" name="brands">
+                        <summary class="acc-summary">
+                            <span class="mono acc-num">01</span>
+                            <span class="acc-name">RainierRack</span>
+                            <span class="acc-meta">Magnetic ski &amp; snowboard rack</span>
+                            <a class="row-status" href="https://rainierrack.com/" target="_blank" rel="noopener">rainierrack.com <span aria-hidden="true">↗</span></a>
+                            <span class="acc-icon" aria-hidden="true"></span>
+                        </summary>
+                        <div class="acc-panel">
+                            <div class="venture">
+                                <figure class="venture-media is-product">
+                                    <img src="assets/img/rainierrack-render.png" alt="Render of the RainierRack Mini, a black magnetic rack with ski and board slots" width="765" height="562" loading="lazy">
+                                </figure>
+                                <div class="venture-body">
+                                    <h2 class="venture-title">Engineered for the <em>parking lot.</em></h2>
+                                    <p class="venture-lead">A sleek, portable magnetic rack that holds your skis or snowboard against your car, so you can suit up, pack up, and ride out without the struggle.</p>
+                                    <ul class="venture-facts">
+                                        <li><strong>Magnetic base</strong><span>Grips the door panel while you gear up, then lifts right off.</span></li>
+                                        <li><strong>Ski &amp; board slots</strong><span>Skis stay upright and together; boards stand tall, out of the slush.</span></li>
+                                        <li><strong>Car-safe material</strong><span>Built to protect your paint. Fresh lines belong on the mountain.</span></li>
+                                        <li><strong>Gives back</strong><span>5% of every sale funds trail crews, avalanche education, and youth snowsports.</span></li>
+                                    </ul>
+                                    <div class="venture-actions">
+                                        <a class="btn btn-light" href="https://rainierrack.com/" target="_blank" rel="noopener">Shop rainierrack.com <span class="arrow" aria-hidden="true">↗</span></a>
+                                        <p class="venture-note">30-day full-refund guarantee</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </details>
 
-                        <div class="rr-detail" id="rr-detail" role="tabpanel" aria-labelledby="rr-tab-0" aria-live="polite">
-                            <p class="eyebrow">Feature <span data-rr-num>01</span></p>
-                            <h3 class="rr-detail-title" data-rr-title>Magnetic base</h3>
-                            <p data-rr-body>Grips the door panel so the rack stays put while you gear up, then lifts right off when it's time to roll.</p>
+                    <details class="acc-item" id="bussy-botanicals" name="brands">
+                        <summary class="acc-summary">
+                            <span class="mono acc-num">02</span>
+                            <span class="acc-name">Bussy Botanicals</span>
+                            <span class="acc-meta">Premium rear wash</span>
+                            <a class="row-status" href="https://www.amazon.com/dp/B0HJV56RDN" target="_blank" rel="noopener">Amazon <span aria-hidden="true">↗</span></a>
+                            <span class="acc-icon" aria-hidden="true"></span>
+                        </summary>
+                        <div class="acc-panel">
+                            <div class="venture">
+                                <figure class="venture-media">
+                                    <img src="assets/img/bussy-product.jpg" alt="Bussy Botanicals Deep Clean Rear Wash bottle beside a natural sponge" width="712" height="1020" loading="lazy">
+                                </figure>
+                                <div class="venture-body">
+                                    <h2 class="venture-title">Respect <em>your rear.</em></h2>
+                                    <p class="venture-lead">Your face has a routine. Why not your backside? Deep Clean Rear Wash is made for the delicate skin everyone forgets about: gentle enough for every day, tough on the grime your body wash leaves behind.</p>
+                                    <ul class="venture-facts">
+                                        <li><strong>Gentle on your skin</strong><span>Sulfate and paraben free, made for skin that regular body wash irritates.</span></li>
+                                        <li><strong>Targets butt grime</strong><span>Clears out the sweat and buildup your regular body wash leaves behind.</span></li>
+                                        <li><strong>Helps control odor</strong><span>Fresh because you're clean, not because you're perfumed.</span></li>
+                                        <li><strong>Made in the USA</strong><span>Proudly made in Georgia.</span></li>
+                                    </ul>
+                                    <div class="venture-actions">
+                                        <a class="btn btn-light" href="https://www.amazon.com/dp/B0HJV56RDN" target="_blank" rel="noopener">Buy on Amazon <span class="arrow" aria-hidden="true">↗</span></a>
+                                        <a class="btn btn-glass" href="https://bussybotanicals.com/" target="_blank" rel="noopener">bussybotanicals.com</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="rr-callouts" data-reveal-group>
-                    <div class="callout">
-                        <p class="eyebrow">The rack that gives back</p>
-                        <p>5% of every purchase goes to grassroots groups: volunteer trail crews, avalanche-safety education, and programs that get first-time skiers onto snow.</p>
-                    </div>
-                    <div class="callout">
-                        <p class="eyebrow">Unblemished paint, fresh skis</p>
-                        <p>If you don't love it within 30 days, send it back for a full refund. If it ever performs less than perfectly, it's replaced free.</p>
-                    </div>
-                    <a class="callout callout-cta" href="https://rainierrack.com/" target="_blank" rel="noopener">
-                        <span class="eyebrow">Shop now</span>
-                        <span class="callout-cta-title">rainierrack.com <span class="arrow" aria-hidden="true">↗</span></span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============ Bussy Botanicals ============ -->
-        <section class="section sand" id="bussy-botanicals" aria-labelledby="bb-title">
-            <div class="container">
-                <div class="split-head" data-reveal>
-                    <div>
-                        <p class="eyebrow">02 <span class="rule"></span> Bussy Botanicals</p>
-                        <h2 id="bb-title" class="display">Respect <em>your rear.</em></h2>
-                    </div>
-                    <p class="lead">Your face has a routine. Why not your backside? Bussy Botanicals makes a premium, unscented wash for the delicate skin everyone forgets about, with a sense of humor to match.</p>
-                </div>
-
-                <div class="bento" data-reveal-group>
-                    <figure class="bento-card bento-hero">
-                        <img src="assets/img/bussy-shower.jpg" alt="Man in a steamy shower holding a bottle of Bussy Botanicals Deep Clean Rear Wash" width="1200" height="1200" loading="lazy">
-                        <figcaption>
-                            <p class="mono eyebrow-sm">Deep Clean Rear Wash</p>
-                            <p class="bento-quote">One pump, and a whole new relationship with your backside.</p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="bento-card bento-product">
-                        <img src="assets/img/bussy-product.jpg" alt="Bussy Botanicals Deep Clean Rear Wash bottle beside a natural sponge" width="712" height="1020" loading="lazy">
-                        <figcaption class="glass-chip mono">Unscented <span class="sep">·</span> 8 fl oz</figcaption>
-                    </figure>
-
-                    <div class="bento-facts">
-                        <div class="fact">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 6 7.2 6 11a6 6 0 0 1-12 0c0-3.8 3-7 6-11Z"/></svg>
-                            <p class="fact-title">pH 4 to 4.5</p>
-                            <p>Balanced for intimate skin.</p>
-                        </div>
-                        <div class="fact">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14-1 9-6 14-14 14Z"/><path d="M5 19 13 11"/></svg>
-                            <p class="fact-title">Unscented</p>
-                            <p>Clean, not covered up.</p>
-                        </div>
-                        <div class="fact">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></svg>
-                            <p class="fact-title">Sulfate &amp; paraben free</p>
-                            <p>Gentle where it matters.</p>
-                        </div>
-                        <div class="fact">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
-                            <p class="fact-title">Made in the USA</p>
-                            <p>Proudly made in Georgia.</p>
-                        </div>
-                    </div>
-
-                    <div class="bento-cta">
-                        <p>Now available on Amazon.</p>
-                        <div class="btn-row">
-                            <a class="btn btn-dark" href="https://www.amazon.com/dp/B0HJV56RDN" target="_blank" rel="noopener">Buy on Amazon <span class="arrow" aria-hidden="true">↗</span></a>
-                            <a class="btn btn-outline" href="https://bussybotanicals.com/" target="_blank" rel="noopener">bussybotanicals.com</a>
-                        </div>
-                    </div>
+                    </details>
                 </div>
             </div>
         </section>
@@ -236,7 +165,7 @@
                 <h2 id="contact-title" class="display-lg">Stocking, press, <em>or partnerships?</em></h2>
                 <p class="lead">Retailers, creators, and collaborators: we'd love to hear from you.</p>
                 <div class="btn-row btn-row-center">
-                    <a class="btn btn-light" href="mailto:jason@orcasmedialab.com">jason@orcasmedialab.com <span class="arrow" aria-hidden="true">↗</span></a>
+                    <a class="btn btn-light" href="mailto:info@orcasmedialab.com">info@orcasmedialab.com <span class="arrow" aria-hidden="true">↗</span></a>
                 </div>
             </div>
         </section>
@@ -251,7 +180,7 @@
                         <img src="assets/img/oml-logo.png" alt="" width="34" height="34" loading="lazy">
                         <span class="brand-name">Orcas Media Lab</span>
                     </a>
-                    <p>An independent parent company for brands, gear, and pictures made with care in the Pacific Northwest.</p>
+                    <p>A brand accelerator and innovation studio.</p>
                 </div>
                 <nav class="footer-col" aria-label="Brands">
                     <p class="mono eyebrow-sm">Brands</p>
@@ -264,7 +193,6 @@
                     <p class="mono eyebrow-sm">Projects</p>
                     <ul>
                         <li><a href="projects.html#photography">Photography</a></li>
-                        <li><a href="projects.html#illustration">Illustration</a></li>
                         <li><a href="projects.html#workbench">Workbench</a></li>
                     </ul>
                 </nav>
@@ -272,8 +200,7 @@
                     <p class="mono eyebrow-sm">Company</p>
                     <ul>
                         <li><a href="index.html#about">About</a></li>
-                        <li><a href="mailto:jason@orcasmedialab.com">jason@orcasmedialab.com</a></li>
-                        <li><span class="muted">Pacific Northwest</span></li>
+                        <li><a href="mailto:info@orcasmedialab.com">info@orcasmedialab.com</a></li>
                     </ul>
                 </div>
             </div>
@@ -282,7 +209,7 @@
 
             <div class="footer-bottom">
                 <p>&copy; <span data-year>2026</span> Orcas Media Lab. All rights reserved.</p>
-                <p class="mono eyebrow-sm">Exploring boundaries</p>
+                <p class="mono eyebrow-sm">Great ideas, made real</p>
             </div>
         </div>
     </footer>
