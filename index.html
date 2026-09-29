@@ -1,89 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Orcas Media Lab - Exploring boundaries in media production, AI research, and embedded technology">
-    <title>Orcas Media Lab</title>
-    
-    <!-- Open Graph tags -->
-    <meta property="og:title" content="Orcas Media Lab">
-    <meta property="og:description" content="Exploring boundaries in media production, AI research, and embedded technology">
-    <meta property="og:image" content="/media/omlLogo-small.png">
-    <meta property="og:url" content="https://orcasmedialab.com">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/media/omlLogo-small.png">
-    
+    <title>Orcas Media Lab | Brand Accelerator &amp; Innovation Studio</title>
+    <meta name="description" content="Orcas Media Lab is a brand accelerator and innovation studio, home of RainierRack and Bussy Botanicals.">
+    <meta name="theme-color" content="#120d0a">
+    <link rel="canonical" href="https://orcasmedialab.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Orcas Media Lab">
+    <meta property="og:title" content="Orcas Media Lab | Brand Accelerator &amp; Innovation Studio">
+    <meta property="og:description" content="A brand accelerator and innovation studio, home of RainierRack and Bussy Botanicals.">
+    <meta property="og:url" content="https://orcasmedialab.com/">
+    <meta property="og:image" content="https://orcasmedialab.com/assets/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+    <!-- Security -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Security -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' https://cdnjs.cloudflare.com; connect-src 'self';">
-    
-    <!-- DOMPurify for XSS protection -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.3/purify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap">
+
+    <link rel="preload" as="image" href="assets/img/eclipse-corona-wide.jpg">
+    <link rel="stylesheet" href="assets/css/site.css">
+
+    <!-- Turns on motion before first paint (only if JS runs and reduced motion is off) -->
+    <script src="assets/js/boot.js"></script>
+    <script src="assets/js/site.js" defer></script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Orcas Media Lab",
+        "legalName": "Orcas Media Lab LLC",
+        "url": "https://orcasmedialab.com/",
+        "logo": "https://orcasmedialab.com/assets/img/oml-logo.png",
+        "email": "info@orcasmedialab.com",
+        "slogan": "Great ideas, made real",
+        "brand": [
+            { "@type": "Brand", "name": "RainierRack", "url": "https://rainierrack.com/" },
+            { "@type": "Brand", "name": "Bussy Botanicals", "url": "https://bussybotanicals.com/" }
+        ]
+    }
+    </script>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="logo" role="banner">
-                <img src="media/omlLogo-small.png" alt="Orcas Media Lab Logo" width="50" height="50">
-                <div class="logo-text">
-                    <h1>Orcas Media Lab</h1>
-                    <p class="tagline">Exploring Boundaries</p>
-                </div>
-            </div>
-            <nav aria-label="Main navigation">
-                <ul role="menubar">
-                    <li role="none"><a role="menuitem" href="index.html" aria-current="page">About</a></li>
-                    <li role="none"><a role="menuitem" href="products.html">Products</a></li>
-                    <li role="none"><a role="menuitem" href="media.html">Media</a></li>
-                    <!-- <li role="none"><a role="menuitem" href="projects.html">Projects</a></li> -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ============ Header ============ -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Orcas Media Lab home">
+                <img src="assets/img/oml-logo.png" alt="" width="34" height="34">
+                <span class="brand-name">Orcas Media Lab</span>
+            </a>
+
+            <nav class="primary-nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+
+            <a class="btn btn-light btn-sm header-cta" href="#contact">Get in touch <span class="arrow" aria-hidden="true">↗</span></a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="sr-only">Menu</span>
+                <span class="menu-toggle-bar" aria-hidden="true"></span>
+                <span class="menu-toggle-bar" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu" hidden>
+            <nav aria-label="Mobile">
+                <ul>
+                    <li><a href="index.html" aria-current="page"><span class="mono">01</span>Home</a></li>
+                    <li><a href="brands.html"><span class="mono">02</span>Brands</a></li>
+                    <li><a href="projects.html"><span class="mono">03</span>Projects</a></li>
+                    <li><a href="#contact"><span class="mono">04</span>Contact</a></li>
                 </ul>
             </nav>
         </div>
-    </header>    
+    </header>
 
-    <main>
-        <div class="container">
-            <div class="about-container">
-                <div class="about-content">
-                    <h2 id="about-title">About Us</h2>
-                    <p>At Orcas Media Lab, we believe in thoughtful work and practical creativity. Our small team is dedicated to making things that are useful, beautiful, and built for real life, whether that's a new piece of gear or a story told through the lens.</p>
-                    <p>We're not chasing trends or hype. Instead, we listen to our community, test our ideas in the wild, and let curiosity guide us. Every project is a chance to learn, improve, and share something genuine with others who love adventure as much as we do.</p>
+    <main id="main">
+
+        <!-- ============ Hero ============ -->
+        <section class="hero ink" aria-labelledby="hero-title">
+            <div class="hero-media" aria-hidden="true">
+                <img src="assets/img/eclipse-corona-wide.jpg" alt="" width="2400" height="1350" fetchpriority="high" decoding="async">
+            </div>
+            <div class="hero-shade" aria-hidden="true"></div>
+
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <p class="pill-tag hero-rise"><span class="dot" aria-hidden="true"></span>Innovation studio <span class="sep" aria-hidden="true">·</span> Pacific Northwest</p>
+                    <h1 id="hero-title" class="display-xl">
+                        <span class="line"><span class="hero-rise">Great ideas,</span></span>
+                        <span class="line"><em class="hero-rise">made real.</em></span>
+                    </h1>
+                    <p class="hero-lead hero-rise">Orcas Media Lab is a brand accelerator. We take practical ideas from first prototype to finished product, and keep a few experiments running on the side.</p>
+                    <div class="btn-row hero-rise">
+                        <a class="btn btn-light" href="brands.html">Explore our brands <span class="arrow" aria-hidden="true">→</span></a>
+                        <a class="btn btn-glass" href="#contact">Get in touch</a>
+                    </div>
+                </div>
+                <p class="hero-caption mono eyebrow-sm">Total solar eclipse, April 2024</p>
+            </div>
+        </section>
+
+        <!-- ============ About ============ -->
+        <section class="section cream" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <div class="split-head" data-reveal>
+                    <div>
+                        <p class="eyebrow">About us</p>
+                        <h2 id="about-title" class="display">No hype, no shortcuts, <em>no boring products.</em></h2>
+                    </div>
+                    <p class="lead">We believe in thoughtful work and practical creativity. Every idea starts as a problem we actually had, gets tested in the wild, and only ships once it's useful, beautiful, and built for real life.</p>
                 </div>
 
-                <div class="contact-section">
-                    <h3>Contact Us</h3>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <p>Email: jason@orcasmedialab.com</p>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p>Location: Pacific Northwest</p>
-                        </div>
+                <ol class="principles" data-reveal-group>
+                    <li>
+                        <span class="mono">01</span>
+                        <h3>Start with a real problem</h3>
+                        <p>Everything we make began as a frustration of our own, like wrestling skis in an icy parking lot.</p>
+                    </li>
+                    <li>
+                        <span class="mono">02</span>
+                        <h3>Test it in the wild</h3>
+                        <p>Prototypes go up mountains, into showers, and out into the rain long before they go on sale.</p>
+                    </li>
+                    <li>
+                        <span class="mono">03</span>
+                        <h3>Listen more than we talk</h3>
+                        <p>Our community shapes what ships. Honest feedback beats a big launch every time.</p>
+                    </li>
+                    <li>
+                        <span class="mono">04</span>
+                        <h3>Leave it better</h3>
+                        <p>Every product we make gives back to a good cause. Doing well should mean doing some good, too.</p>
+                    </li>
+                </ol>
+
+                <div class="about-outro" data-reveal>
+                    <p>Some ideas become brands you can buy. <em>Others stay in the lab.</em></p>
+                    <div class="btn-row">
+                        <a class="btn btn-dark" href="brands.html">Our brands <span class="arrow" aria-hidden="true">→</span></a>
+                        <a class="btn btn-outline" href="projects.html">Projects &amp; research <span class="arrow" aria-hidden="true">→</span></a>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- ============ Contact ============ -->
+        <section class="cta ink" id="contact" aria-labelledby="contact-title">
+            <div class="cta-glow" aria-hidden="true"></div>
+            <div class="container cta-inner" data-reveal>
+                <p class="eyebrow">Contact</p>
+                <h2 id="contact-title" class="display-lg">Have an idea <em>worth chasing?</em></h2>
+                <p class="lead">Partnerships, press, wholesale, or a wild idea for the lab. We read everything.</p>
+                <div class="btn-row btn-row-center">
+                    <a class="btn btn-light" href="mailto:info@orcasmedialab.com">info@orcasmedialab.com <span class="arrow" aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
+    <!-- ============ Footer ============ -->
+    <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2025 Orcas Media Lab. All rights reserved.</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="brand" href="index.html">
+                        <img src="assets/img/oml-logo.png" alt="" width="34" height="34" loading="lazy">
+                        <span class="brand-name">Orcas Media Lab</span>
+                    </a>
+                    <p>A brand accelerator and innovation studio.</p>
+                </div>
+                <nav class="footer-col" aria-label="Brands">
+                    <p class="mono eyebrow-sm">Brands</p>
+                    <ul>
+                        <li><a href="brands.html#rainierrack">RainierRack</a></li>
+                        <li><a href="brands.html#bussy-botanicals">Bussy Botanicals</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-col" aria-label="Projects">
+                    <p class="mono eyebrow-sm">Projects</p>
+                    <ul>
+                        <li><a href="projects.html#photography">Photography</a></li>
+                        <li><a href="projects.html#workbench">Workbench</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-col">
+                    <p class="mono eyebrow-sm">Company</p>
+                    <ul>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="mailto:info@orcasmedialab.com">info@orcasmedialab.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer-wordmark" aria-hidden="true">Orcas Media Lab</p>
+
+            <div class="footer-bottom">
+                <p>&copy; <span data-year>2026</span> Orcas Media Lab LLC. All rights reserved.</p>
+                <p class="mono eyebrow-sm">Great ideas, made real</p>
+            </div>
         </div>
     </footer>
-
-    <script src="js/script.js"></script>
 </body>
-
 </html>

@@ -3,106 +3,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Orcas Media Lab - Innovation Projects">
-    <title>Projects - Orcas Media Lab</title>
-    
-    <!-- Open Graph tags -->
-    <meta property="og:title" content="Projects - Orcas Media Lab">
-    <meta property="og:description" content="Innovation projects from Orcas Media Lab">
-    <meta property="og:image" content="/media/omlLogo-small.png">
-    <meta property="og:url" content="https://orcasmedialab.com/projects">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/media/omlLogo-small.png">
-    
+    <title>Projects &amp; Research | Orcas Media Lab</title>
+    <meta name="description" content="Photography and weekend code from Orcas Media Lab, including images of the April 2024 total solar eclipse.">
+    <meta name="theme-color" content="#120d0a">
+    <link rel="canonical" href="https://orcasmedialab.com/projects.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Orcas Media Lab">
+    <meta property="og:title" content="Projects &amp; Research | Orcas Media Lab">
+    <meta property="og:description" content="Photography and weekend code from Orcas Media Lab.">
+    <meta property="og:url" content="https://orcasmedialab.com/projects.html">
+    <meta property="og:image" content="https://orcasmedialab.com/assets/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+    <!-- Security -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap">
+
+    <link rel="stylesheet" href="assets/css/site.css">
+
+    <!-- Turns on motion before first paint (only if JS runs and reduced motion is off) -->
+    <script src="assets/js/boot.js"></script>
+    <script src="assets/js/site.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <div class="logo" role="banner">
-                <img src="media/omlLogo-small.png" alt="Orcas Media Lab Logo" width="50" height="50">
-                <div class="logo-text">
-                    <h1>Orcas Media Lab</h1>
-                    <p class="tagline">Exploring Boundaries</p>
-                </div>
-            </div>
-            <nav aria-label="Main navigation">
-                <ul role="menubar">
-                    <li role="none"><a role="menuitem" href="index.html">About</a></li>
-                    <li role="none"><a role="menuitem" href="products.html">Products</a></li>
-                    <li role="none"><a role="menuitem" href="media.html">Media</a></li>
-                    <!-- <li role="none"><a role="menuitem" href="projects.html">Projects</a></li> -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ============ Header ============ -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Orcas Media Lab home">
+                <img src="assets/img/oml-logo.png" alt="" width="34" height="34">
+                <span class="brand-name">Orcas Media Lab</span>
+            </a>
+
+            <nav class="primary-nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="projects.html" aria-current="page">Projects</a></li>
+                </ul>
+            </nav>
+
+            <a class="btn btn-light btn-sm header-cta" href="index.html#contact">Get in touch <span class="arrow" aria-hidden="true">↗</span></a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="sr-only">Menu</span>
+                <span class="menu-toggle-bar" aria-hidden="true"></span>
+                <span class="menu-toggle-bar" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu" hidden>
+            <nav aria-label="Mobile">
+                <ul>
+                    <li><a href="index.html"><span class="mono">01</span>Home</a></li>
+                    <li><a href="brands.html"><span class="mono">02</span>Brands</a></li>
+                    <li><a href="projects.html" aria-current="page"><span class="mono">03</span>Projects</a></li>
+                    <li><a href="index.html#contact"><span class="mono">04</span>Contact</a></li>
                 </ul>
             </nav>
         </div>
-    </header>    
+    </header>
 
-    <main>
-        <div class="hero-section projects-hero">
-            <div class="hero-content">
-                <h2 class="gradient-text">Innovation Lab</h2>
-                <p class="hero-subtitle">Where ideas come to life</p>
-            </div>
-        </div>
+    <main id="main">
 
-        <div class="container">
-            <!-- Project Videos Grid -->
-            <section class="project-grid">
-                <h3 class="section-title">Current Projects</h3>
-                <div class="projects-container">
-                    <article class="project-card">
-                        <div class="project-media">
-                            <video poster="media/tech-horizons-poster.jpg" controls>
-                                <source src="media/tech-horizons-teaser.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div class="project-content">
-                            <h4>Tech Horizons</h4>
-                            <p>Exploring breakthrough technologies shaping our future</p>
-                            <div class="tech-stack">
-                                <span>AI</span>
-                                <span>Quantum Computing</span>
-                                <span>Neural Networks</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-media">
-                            <video poster="media/digital-pulse-poster.jpg" controls>
-                                <source src="media/digital-pulse-teaser.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div class="project-content">
-                            <h4>Digital Pulse</h4>
-                            <p>Real-time music visualization engine</p>
-                            <div class="tech-stack">
-                                <span>Web Audio API</span>
-                                <span>WebGL</span>
-                                <span>Canvas</span>
-                            </div>
-                        </div>
-                    </article>
+        <!-- ============ Page hero + projects ============ -->
+        <section class="page-hero ink" aria-labelledby="page-title">
+            <div class="container">
+                <div class="split-head" data-reveal>
+                    <div>
+                        <p class="eyebrow">Projects &amp; research</p>
+                        <h1 id="page-title" class="display-lg">Side quests, <em>taken seriously.</em></h1>
+                    </div>
+                    <p class="lead">Photography and code we make for the fun of it. Some of it becomes a brand; most of it just makes us better at what we do.</p>
                 </div>
-            </section>
-        </div>
+
+                <div class="acc" data-reveal>
+                    <details class="acc-item" id="photography" name="projects">
+                        <summary class="acc-summary">
+                            <span class="mono acc-num">01</span>
+                            <span class="acc-name">Photography</span>
+                            <span class="acc-meta">The 2024 total solar eclipse</span>
+                            <span class="acc-icon" aria-hidden="true"></span>
+                        </summary>
+                        <div class="acc-panel">
+                            <p class="acc-intro">Patient work: plan, wait, and stay ready for the handful of seconds that make the whole trip worth it. Shot during the total solar eclipse of April 2024.</p>
+                            <div class="triptych">
+                                <figure class="shot">
+                                    <button class="shot-open" type="button" data-lightbox="assets/img/eclipse-baileys-beads.jpg" data-caption="Baily's beads. Total solar eclipse, April 2024.">
+                                        <img src="assets/img/eclipse-baileys-beads.jpg" alt="Baily's beads glowing along the moon's edge during the 2024 total solar eclipse" width="1400" height="1400" loading="lazy">
+                                        <span class="sr-only">Open larger</span>
+                                    </button>
+                                    <figcaption>
+                                        <span class="mono">I</span>
+                                        <span class="shot-title">Baily's beads</span>
+                                        <span class="shot-meta mono">Apr 2024</span>
+                                    </figcaption>
+                                </figure>
+                                <figure class="shot">
+                                    <button class="shot-open" type="button" data-lightbox="assets/img/eclipse-diamond-ring.jpg" data-caption="The diamond ring. Total solar eclipse, April 2024.">
+                                        <img src="assets/img/eclipse-diamond-ring.jpg" alt="Diamond ring effect during the 2024 total solar eclipse" width="1400" height="1400" loading="lazy">
+                                        <span class="sr-only">Open larger</span>
+                                    </button>
+                                    <figcaption>
+                                        <span class="mono">II</span>
+                                        <span class="shot-title">The diamond ring</span>
+                                        <span class="shot-meta mono">Apr 2024</span>
+                                    </figcaption>
+                                </figure>
+                                <figure class="shot">
+                                    <button class="shot-open" type="button" data-lightbox="assets/img/eclipse-corona.jpg" data-caption="Totality and the solar corona. Total solar eclipse, April 2024.">
+                                        <img src="assets/img/eclipse-corona.jpg" alt="The solar corona surrounding the moon at totality, April 2024" width="1600" height="1067" loading="lazy">
+                                        <span class="sr-only">Open larger</span>
+                                    </button>
+                                    <figcaption>
+                                        <span class="mono">III</span>
+                                        <span class="shot-title">Totality</span>
+                                        <span class="shot-meta mono">Apr 2024</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="acc-item" id="workbench" name="projects">
+                        <summary class="acc-summary">
+                            <span class="mono acc-num">02</span>
+                            <span class="acc-name">Workbench</span>
+                            <span class="acc-meta">Games, simulations, and small tools</span>
+                            <span class="acc-icon" aria-hidden="true"></span>
+                        </summary>
+                        <div class="acc-panel">
+                            <p class="acc-intro">Weekend code, built to learn and shared in case it's useful.</p>
+                            <ul class="bench">
+                                <li>
+                                    <a href="https://github.com/orcasmedialab/trenchPilot" target="_blank" rel="noopener">
+                                        <span class="mono bench-num">01</span>
+                                        <span class="bench-name">trenchPilot</span>
+                                        <span class="bench-desc">A 3D drone flight game that runs in the browser: find the enemy bunker before your battery runs out.</span>
+                                        <span class="mono bench-tags">JavaScript · Three.js</span>
+                                        <span class="bench-arrow" aria-hidden="true">↗</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/orcasmedialab/flappyBots" target="_blank" rel="noopener">
+                                        <span class="mono bench-num">02</span>
+                                        <span class="bench-name">flappyBots</span>
+                                        <span class="bench-desc">Flappy Bird rebuilt so bots evolved by a genetic algorithm can learn to play it.</span>
+                                        <span class="mono bench-tags">Python · Pygame</span>
+                                        <span class="bench-arrow" aria-hidden="true">↗</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/orcasmedialab/lineupSim" target="_blank" rel="noopener">
+                                        <span class="mono bench-num">03</span>
+                                        <span class="bench-name">lineupSim</span>
+                                        <span class="bench-desc">A baseball simulator that plays out full seasons to test every possible batting order.</span>
+                                        <span class="mono bench-tags">Python</span>
+                                        <span class="bench-arrow" aria-hidden="true">↗</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/orcasmedialab/parkingChecker" target="_blank" rel="noopener">
+                                        <span class="mono bench-num">04</span>
+                                        <span class="bench-name">parkingChecker</span>
+                                        <span class="bench-desc">Watches the Crystal Mountain parking site and beeps when your date opens up.</span>
+                                        <span class="mono bench-tags">Python · Selenium</span>
+                                        <span class="bench-arrow" aria-hidden="true">↗</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <p class="bench-more"><a class="text-link" href="https://github.com/orcasmedialab" target="_blank" rel="noopener">More on GitHub <span class="arrow" aria-hidden="true">↗</span></a></p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ Contact ============ -->
+        <section class="cta ink" aria-labelledby="contact-title">
+            <div class="cta-glow" aria-hidden="true"></div>
+            <div class="container cta-inner" data-reveal>
+                <p class="eyebrow">Contact</p>
+                <h2 id="contact-title" class="display-lg">Have an idea <em>worth chasing?</em></h2>
+                <p class="lead">Collaborations, commissions, or a wild idea for the lab. We read everything.</p>
+                <div class="btn-row btn-row-center">
+                    <a class="btn btn-light" href="mailto:info@orcasmedialab.com">info@orcasmedialab.com <span class="arrow" aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
+    <!-- ============ Footer ============ -->
+    <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2025 Orcas Media Lab. All rights reserved.</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="brand" href="index.html">
+                        <img src="assets/img/oml-logo.png" alt="" width="34" height="34" loading="lazy">
+                        <span class="brand-name">Orcas Media Lab</span>
+                    </a>
+                    <p>A brand accelerator and innovation studio.</p>
+                </div>
+                <nav class="footer-col" aria-label="Brands">
+                    <p class="mono eyebrow-sm">Brands</p>
+                    <ul>
+                        <li><a href="brands.html#rainierrack">RainierRack</a></li>
+                        <li><a href="brands.html#bussy-botanicals">Bussy Botanicals</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-col" aria-label="Projects">
+                    <p class="mono eyebrow-sm">Projects</p>
+                    <ul>
+                        <li><a href="projects.html#photography">Photography</a></li>
+                        <li><a href="projects.html#workbench">Workbench</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-col">
+                    <p class="mono eyebrow-sm">Company</p>
+                    <ul>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="mailto:info@orcasmedialab.com">info@orcasmedialab.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer-wordmark" aria-hidden="true">Orcas Media Lab</p>
+
+            <div class="footer-bottom">
+                <p>&copy; <span data-year>2026</span> Orcas Media Lab LLC. All rights reserved.</p>
+                <p class="mono eyebrow-sm">Great ideas, made real</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Add necessary scripts for interactive demos -->
-    <script src="js/script.js"></script>
+    <!-- Lightbox -->
+    <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+        <button class="lightbox-close" type="button" aria-label="Close">×</button>
+        <img alt="">
+        <p class="lightbox-caption mono"></p>
+    </dialog>
 </body>
-</html> 
+</html>
