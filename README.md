@@ -35,6 +35,12 @@ python3 -m http.server 8010
 ```
 Then open http://localhost:8010.
 
+## TODO
+- Replace the `products.html` → `brands.html` and `media.html` → `projects.html#photography` meta-refresh
+  redirects with proper HTTP redirects (301/308 as appropriate) if/when the hosting setup allows it, for a
+  cleaner long-term SEO migration. GitHub Pages can't send server-side redirects, so this likely means moving
+  to a host or CDN that can (for example Cloudflare, Netlify, or Vercel).
+
 ## Security
 A Content-Security-Policy `<meta>` tag allows only same-origin scripts/images plus Google Fonts.
 Avoid inline `<script>` and `style=""` attributes, or update the policy.
